@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
 get 'sign-up', to: "registration#new"
+post 'sign-up', to: "registration#create"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
